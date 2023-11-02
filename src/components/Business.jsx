@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { features } from "../constants"
 import styles, {layout} from "../constants/style";
 import Button from "./Button";
@@ -5,7 +6,7 @@ import Button from "./Button";
 
 function FeatureCard (props){
 
-  const {id, icon, title, content, index}= props
+  const {icon, title, content, index}= props
   return (
 <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card `}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
